@@ -124,7 +124,7 @@ public class ArticlesList extends Fragment {
                 weekForecast
         );
 
-        View rootView = inflater.inflate(R.layout.fragment_articles_list, null, false);
+        View rootView = inflater.inflate(R.layout.fragment_articles_list, container, false);
 
         ListView listView = (ListView) rootView.findViewById(R.id.listview_articles);
         listView.setAdapter(mForecastAdapter);
