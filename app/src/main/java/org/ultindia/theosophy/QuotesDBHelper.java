@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * Created by srikanta on 15/7/16.
  */
-public class DBHelper extends SQLiteOpenHelper {
+public class QuotesDBHelper extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
 
     // Database Name
@@ -27,7 +27,7 @@ public class DBHelper extends SQLiteOpenHelper {
     private static final String KEY_QUOTE = "quote";
 
 
-    public DBHelper(Context context) {
+    public QuotesDBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
